@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soporte | Llévele</title>
+  <meta name="description" content="Ayuda y contacto de Llévele.">
+  <meta name="theme-color" content="#1F7A3A">
+  <link rel="icon" href="favicon.png">
+  <style>
+@font-face { font-family: Figtree; font-weight: 400; src: url(fuentes/figtree-400.ttf) format("truetype"); font-display: swap; }
+@font-face { font-family: Figtree; font-weight: 700; src: url(fuentes/figtree-700.ttf) format("truetype"); font-display: swap; }
+@font-face { font-family: Bricolage; font-weight: 800; src: url(fuentes/bricolage-800.ttf) format("truetype"); font-display: swap; }
+:root { --fondo: #FBF6EA; --tarjeta: #FFFFFF; --verde: #1F7A3A; --verde-oscuro: #14532D; --tinta: #16241B; --tinta2: #4B5A50; --linea: #E6DCC7; --amarillo: #F6B800; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--fondo); color: var(--tinta); font: 400 17px/1.6 Figtree, system-ui, -apple-system, "Segoe UI", sans-serif; }
+.mantel { height: 14px; background-color: var(--verde); background-image: linear-gradient(90deg, rgba(255,255,255,.18) 50%, transparent 50%), linear-gradient(rgba(255,255,255,.18) 50%, transparent 50%); background-size: 28px 28px; }
+.hoja { max-width: 680px; margin: 0 auto; padding: 28px 20px 56px; }
+.marca { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--verde); }
+.marca img { width: 48px; height: 48px; border-radius: 12px; }
+.marca span { font: 800 28px/1 Bricolage, Figtree, system-ui, sans-serif; letter-spacing: -0.03em; }
+nav { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 18px 0 30px; padding-bottom: 16px; border-bottom: 2px dashed var(--linea); }
+nav a { color: var(--tinta2); font-weight: 700; font-size: 15px; text-decoration: none; padding: 6px 0; }
+nav a[aria-current="page"] { color: var(--verde); text-decoration: underline; text-underline-offset: 4px; }
+h1 { font: 800 clamp(30px, 7vw, 40px)/1.1 Bricolage, Figtree, system-ui, sans-serif; letter-spacing: -0.03em; margin: 0 0 14px; }
+h2 { font: 800 21px/1.25 Bricolage, Figtree, system-ui, sans-serif; letter-spacing: -0.01em; margin: 34px 0 8px; }
+p { margin: 0 0 12px; }
+.intro { font-size: 18px; color: var(--tinta2); }
+a { color: var(--verde); }
+a:focus-visible { outline: 3px solid var(--amarillo); outline-offset: 3px; border-radius: 4px; }
+.contacto { background: var(--tarjeta); border-radius: 18px; padding: 18px 20px; margin: 22px 0 6px; }
+.contacto strong { display: block; font-size: 15px; color: var(--tinta2); }
+.contacto a { font-size: 20px; font-weight: 700; overflow-wrap: anywhere; }
+.nota { margin-top: 36px; font-size: 14px; color: var(--tinta2); }
+</style>
+</head>
+<body>
+  <div class="mantel" aria-hidden="true"></div>
+  <main class="hoja">
+    <a class="marca" href="index.html"><img src="icono.png" alt=""><span>Llévele</span></a>
+    <nav aria-label="Páginas">
+      <a href="index.html" aria-current="page">Soporte</a>
+      <a href="privacidad.html">Aviso de privacidad</a>
+      <a href="terminos.html">Términos de uso</a>
+    </nav>
+    <h1>¿Te ayudamos?</h1>
+    <p class="intro">Llévele arma tu menú de la semana y tu lista del súper sin pasarte del gasto, con precios de Profeco.</p>
+    <div class="contacto"><strong>Escríbenos</strong><a href="mailto:hola.llevele@gmail.com">hola.llevele@gmail.com</a></div>
+    <p>Cuéntanos qué pasó y, si puedes, manda una captura de pantalla. Te respondemos por correo.</p>
+    <h2>¿Cómo cancelo mi suscripción?</h2>
+    <p>En tu iPhone, abre Ajustes, toca tu nombre y luego Suscripciones. Ahí eliges Llévele Pro y lo cancelas. Para que no se cobre el siguiente periodo, cancélalo al menos 24 horas antes de que termine.</p>
+    <h2>Cambié de teléfono, ¿cómo recupero Llévele Pro?</h2>
+    <p>Entra con la misma cuenta de Apple, abre Llévele, ve a Llévele Pro y toca &quot;Restaurar compras&quot;.</p>
+    <h2>¿Cómo pido un reembolso?</h2>
+    <p>Los cobros los hace Apple, así que los reembolsos también: pídelo en reportaproblem.apple.com.</p>
+    <h2>¿De dónde salen los precios?</h2>
+    <p>De Profeco (Quién es Quién en los Precios), con las fechas que ves en la app. Son un estimado: en tu tienda pueden variar.</p>
+    <h2>¿Cómo borro mis datos?</h2>
+    <p>Tus respuestas y tu semana viven solo en tu teléfono. En la app, ve a Tus respuestas y toca &quot;Empezar de cero&quot;, o borra la app.</p>
+    <p class="nota">Última actualización: 17 de octubre de 2026.</p>
+  </main>
+</body>
+</html>
