@@ -1,0 +1,32 @@
+{
+  "name": "Llévele",
+  "short_name": "Llévele",
+  "description": "Tu menú de la semana y tu lista del súper, sin pasarte del gasto. Con los precios de Profeco de los súper de tu zona.",
+  "lang": "es-MX",
+  "start_url": "/llevele/app/",
+  "scope": "/llevele/app/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FBF6EA",
+  "theme_color": "#1F7A3A",
+  "icons": [
+    {
+      "src": "icono-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icono-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icono-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
