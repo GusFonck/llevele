@@ -1,5 +1,6 @@
-# Le pide a GitHub Pages que publique lo último de main. Hace falta porque los cambios que sube Claude no disparan
-# solos la publicación (los de una persona sí). Se corre a mano desde Actions o con la API (workflow_dispatch).
+# La página se publica desde la rama gh-pages (GitHub Pages › Deploy from a branch). Los cambios se hacen en main y se
+# suben también a gh-pages (git push origin main:gh-pages); eso solo ya publica. Este botón vuelve a pedir la
+# publicación por si alguna se atora. Se corre a mano desde Actions o con la API (workflow_dispatch).
 name: Publicar la página
 
 on:
@@ -12,7 +13,7 @@ jobs:
   publicar:
     runs-on: ubuntu-latest
     steps:
-      - name: Pedir a GitHub Pages que publique main
+      - name: Pedir a GitHub Pages que vuelva a publicar
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
