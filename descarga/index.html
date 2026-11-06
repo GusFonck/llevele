@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Descarga Llévele</title>
+  <meta name="description" content="Tu menú de la semana y tu lista del súper, sin pasarte del gasto. Descárgala gratis en el App Store.">
+  <meta name="theme-color" content="#1F7A3A">
+  <meta name="apple-itunes-app" content="app-id=6829832787">
+  <link rel="icon" href="../favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:title" content="Llévele: Tu Súper Inteligente">
+  <meta property="og:description" content="Tu menú de la semana y tu lista del súper, sin pasarte del gasto. Descárgala gratis en el App Store.">
+  <meta property="og:url" content="https://gusfonck.github.io/llevele/descarga/">
+  <meta property="og:image" content="https://gusfonck.github.io/llevele/app/compartir.jpg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="500">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>
+    // En iPhone y iPad se va directo a la App Store; en Android y en la compu se queda esta página.
+    (function () {
+      var ua = navigator.userAgent || '';
+      var esIOS = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      if (esIOS) location.replace('https://apps.apple.com/mx/app/id6829832787');
+    })();
+  </script>
+  <style>
+@font-face { font-family: Figtree; font-weight: 400; src: url(../fuentes/figtree-400.ttf) format("truetype"); font-display: swap; }
+@font-face { font-family: Figtree; font-weight: 700; src: url(../fuentes/figtree-700.ttf) format("truetype"); font-display: swap; }
+@font-face { font-family: Bricolage; font-weight: 800; src: url(../fuentes/bricolage-800.ttf) format("truetype"); font-display: swap; }
+:root { --fondo: #FBF6EA; --tarjeta: #FFFFFF; --verde: #1F7A3A; --verde-oscuro: #14532D; --tinta: #16241B; --tinta2: #4B5A50; --linea: #E6DCC7; --amarillo: #F6B800; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--fondo); color: var(--tinta); font: 400 17px/1.6 Figtree, system-ui, -apple-system, "Segoe UI", sans-serif; }
+.mantel { height: 14px; background-color: var(--verde); background-image: linear-gradient(90deg, rgba(255,255,255,.18) 50%, transparent 50%), linear-gradient(rgba(255,255,255,.18) 50%, transparent 50%); background-size: 28px 28px; }
+.hoja { max-width: 520px; margin: 0 auto; padding: 36px 20px 56px; }
+.icono { width: 96px; height: 96px; border-radius: 22px; display: block; box-shadow: 0 6px 18px rgba(20, 83, 45, .18); }
+h1 { font: 800 clamp(32px, 9vw, 44px)/1.05 Bricolage, Figtree, system-ui, sans-serif; letter-spacing: -0.03em; margin: 22px 0 10px; color: var(--verde-oscuro); }
+.intro { font-size: 18px; color: var(--tinta2); margin: 0 0 26px; }
+.boton { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; min-height: 58px; border-radius: 16px; padding: 12px 20px; font: 700 18px/1.2 Figtree, system-ui, sans-serif; text-decoration: none; }
+.boton.tienda { background: var(--tinta); color: #fff; }
+.es-android .boton.tienda { display: none; }
+.es-android .android { margin-top: 0; }
+.boton.web { background: var(--tarjeta); color: var(--verde); border: 2px solid var(--verde); margin-top: 12px; }
+.boton:focus-visible { outline: 3px solid var(--amarillo); outline-offset: 3px; }
+.android { background: var(--tarjeta); border-radius: 18px; padding: 18px 20px; margin-top: 26px; }
+.android strong { display: block; font-size: 16px; }
+.android p { margin: 4px 0 0; color: var(--tinta2); font-size: 16px; }
+.pie { margin-top: 34px; font-size: 14px; color: var(--tinta2); }
+.pie a { color: var(--verde); }
+  </style>
+</head>
+<body>
+  <div class="mantel" aria-hidden="true"></div>
+  <main class="hoja">
+    <img class="icono" src="../icono.png" alt="Llévele">
+    <h1>Tu semana resuelta, sin pasarte del gasto.</h1>
+    <p class="intro">Llévele te arma el menú de la semana y la lista del súper con lo que quieres gastar, y te dice en qué súper te sale más barato.</p>
+    <a class="boton tienda" href="https://apps.apple.com/mx/app/id6829832787">Descárgala gratis en el App Store</a>
+    <div class="android">
+      <script>if (/Android/i.test(navigator.userAgent)) document.body.classList.add('es-android');</script>
+      <strong>¿Tienes Android?</strong>
+      <p>Muy pronto sale en Google Play. Mientras, puedes usarla gratis desde tu navegador.</p>
+      <a class="boton web" href="../app/">Abrir Llévele en la web</a>
+    </div>
+    <p class="pie">¿Dudas? Escríbenos a <a href="mailto:hola.llevele@gmail.com">hola.llevele@gmail.com</a> · <a href="../">Soporte</a></p>
+  </main>
+</body>
+</html>
